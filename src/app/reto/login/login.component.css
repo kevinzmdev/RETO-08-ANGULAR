@@ -1,0 +1,19 @@
+.tamaño{
+  width: 300px;
+}
+
+form {
+  width: 300px;
+}
+
+.border{
+  color: rgb(0, 0, 0);
+  background-color:#ffffff;
+  border:none;
+  border-bottom:1px solid rgba(196, 27, 24, 0.814);
+  border-radius: 5px;
+}
+.ht{
+  text-align: center;
+  padding: 15px;
+}

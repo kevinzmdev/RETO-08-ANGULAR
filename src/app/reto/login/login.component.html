@@ -1,0 +1,27 @@
+<h1 class="text-center">LOGIN</h1>
+
+  <form class="container">
+    <section class="mb-3 row">
+      <label  class="form-label" ><b> Usuario: </b> </label>
+      <input type="email"  class="tamaño border" #txtUser>
+    </section>
+    <section class="mb-3 row">
+      <label class="form-label"> <b>Contraseña:</b></label>
+      <input type="password" class="tamaño border">
+    </section>
+    <input type="button" class="btn btn-outline-primary" value="Login" (click)="Validar(txtUser.value)">
+  </form>
+  <p class="ht" *ngIf="resultado==false else verdad ">
+    {{mensaje}}
+  </p>
+  <ng-template #verdad>
+    <p class="ht">{{mensaje}}</p>
+    <ul class="list-group ht">
+      <li *ngFor = "let pag of paginas" class="list-group-item">
+        <a href="">{{pag}}</a>
+      </li>
+    </ul>
+  </ng-template>
+
+
+
